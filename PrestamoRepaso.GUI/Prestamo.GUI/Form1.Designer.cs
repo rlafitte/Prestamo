@@ -41,6 +41,9 @@ namespace Prestamo.GUI
             this.btnAlta = new System.Windows.Forms.Button();
             this.lstTipoPrestamo = new System.Windows.Forms.ListBox();
             this.tbComisionTotal = new System.Windows.Forms.TextBox();
+            this.lbContadorPrestamos = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstPrestamos
@@ -142,11 +145,42 @@ namespace Prestamo.GUI
             this.tbComisionTotal.Size = new System.Drawing.Size(100, 20);
             this.tbComisionTotal.TabIndex = 11;
             // 
+            // lbContadorPrestamos
+            // 
+            this.lbContadorPrestamos.AutoSize = true;
+            this.lbContadorPrestamos.Location = new System.Drawing.Point(590, 394);
+            this.lbContadorPrestamos.Name = "lbContadorPrestamos";
+            this.lbContadorPrestamos.Size = new System.Drawing.Size(35, 13);
+            this.lbContadorPrestamos.TabIndex = 12;
+            this.lbContadorPrestamos.Text = "label1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(485, 394);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Total Préstamos: ";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(452, 341);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Actualizar lista";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbContadorPrestamos);
             this.Controls.Add(this.tbComisionTotal);
             this.Controls.Add(this.lstTipoPrestamo);
             this.Controls.Add(this.btnAlta);
@@ -181,6 +215,9 @@ namespace Prestamo.GUI
         private System.Windows.Forms.Button btnAlta;
         private System.Windows.Forms.ListBox lstTipoPrestamo;
         private System.Windows.Forms.TextBox tbComisionTotal;
+        private System.Windows.Forms.Label lbContadorPrestamos;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

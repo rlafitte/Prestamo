@@ -33,6 +33,7 @@ namespace Prestamo.GUI
             Prestamos p = Pre;
             _preNeg = new PrestamoNegocio();
             _preNeg.AgregarPrestamo(p);
+            _preNeg.TraerPrestamos();
             this.Close();
         }
 

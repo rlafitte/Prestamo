@@ -31,5 +31,11 @@ namespace Prestamo.Negocio
             x = x * comision;
             return x.ToString("0.00");
         }
+        public int ContadorPrestamos()
+        {
+            int i = Prestamos1.Count();
+            return i;
+        }
+
     }
 }

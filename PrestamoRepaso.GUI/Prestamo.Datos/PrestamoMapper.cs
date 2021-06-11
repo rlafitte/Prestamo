@@ -30,11 +30,15 @@ namespace Prestamo.Datos
         //Post
         public TransactionResult AgregarPrestamo(Prestamos pre)
         {
+
             NameValueCollection n = ReverseMap(pre);
             string json = WebHelper.Post("", n);
+            
             TransactionResult res  =  JsonConvert.DeserializeObject<TransactionResult>(json);
             return res;
         }
+
+
 
         //ReverseMap
         private NameValueCollection ReverseMap(Prestamos pre)

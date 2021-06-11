@@ -70,6 +70,7 @@ namespace Prestamo.GUI
                 lstPrestamos.DataSource = _op.Prestamos1;
 
                 tbComisionTotal.Text = _op.PorcentajeComsion(_op.Prestamos1, _op.Comision);
+                lbContadorPrestamos.Text = _op.ContadorPrestamos().ToString();
             }
             catch
             {
@@ -128,9 +129,10 @@ namespace Prestamo.GUI
             {
                 MessageBox.Show("Error al dar de alta préstamo.");
             }
-          
+
             CargarPrestamos();
             _op.PorcentajeComsion(_op.Prestamos1, _op.Comision);
+            lbContadorPrestamos.Text = _op.ContadorPrestamos().ToString();
             LimpiarCampos();
         }
 
@@ -141,6 +143,12 @@ namespace Prestamo.GUI
             tbCuotaInt.Clear();
             tbCuotaTotal.Clear();
             tbPlazo.Clear();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CargarPrestamos();
+            lbContadorPrestamos.Text = _op.ContadorPrestamos().ToString();
         }
     }
 }
