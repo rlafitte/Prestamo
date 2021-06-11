@@ -3,3 +3,4 @@ C:\Users\renar\Desktop\CAI\Prestamo\PrestamoRepaso.GUI\Prestamo.Entidades\bin\De
 C:\Users\renar\Desktop\CAI\Prestamo\PrestamoRepaso.GUI\Prestamo.Entidades\obj\Debug\Prestamo.Entidades.csproj.CoreCompileInputs.cache
 C:\Users\renar\Desktop\CAI\Prestamo\PrestamoRepaso.GUI\Prestamo.Entidades\obj\Debug\Prestamo.Entidades.dll
 C:\Users\renar\Desktop\CAI\Prestamo\PrestamoRepaso.GUI\Prestamo.Entidades\obj\Debug\Prestamo.Entidades.pdb
+C:\Users\renar\Desktop\CAI\Prestamo\PrestamoRepaso.GUI\Prestamo.Entidades\obj\Debug\Prestamo.Entidades.csprojAssemblyReference.cache

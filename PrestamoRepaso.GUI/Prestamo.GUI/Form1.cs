@@ -16,6 +16,7 @@ namespace Prestamo.GUI
     {
         private PrestamoNegocio _preNeg;
         private TipoPrestamoNegocio _tipNeg;
+        private Operador _op;
         public Form1()
         {
             try
@@ -49,6 +50,7 @@ namespace Prestamo.GUI
             try
             {
                 lstTipoPrestamo.DataSource = null;
+                
                 lstTipoPrestamo.DataSource = _tipNeg.TraerTipoPrestamos();
             }
             catch
@@ -61,8 +63,13 @@ namespace Prestamo.GUI
         {
             try
             {
+                _op = new Operador();
+                _op.Prestamos1 = _preNeg.TraerPrestamos();
                 lstPrestamos.DataSource = null;
-                lstPrestamos.DataSource = _preNeg.TraerPrestamos();
+                //lstPrestamos.DataSource = _preNeg.TraerPrestamos();
+                lstPrestamos.DataSource = _op.Prestamos1;
+
+                tbComisionTotal.Text = _op.PorcentajeComsion(_op.Prestamos1, _op.Comision);
             }
             catch
             {

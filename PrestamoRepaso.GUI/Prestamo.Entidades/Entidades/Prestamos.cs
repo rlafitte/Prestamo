@@ -65,5 +65,21 @@ namespace Prestamo.Entidades
         {
             return $"ID: {this.Id} - Tipo Prestamo {this.TipoPre.Id}";
         }
+
+        public double CuotaCapital()
+        {
+            //+ CuotaCapital: Monto/Plazo
+            return (this.Monto / this.Plazo);
+        }
+        public double CuotaInteres()
+        {
+            //+ CuotaInteres: CuotaCapital* (TNA/12/100)
+            return (this.CuotaCapital() * (this.Tna / 12 / 100)); ;
+        }
+        public double CuotaTotal()
+        {
+            //+ Cuota: CuotaCapital + CuotaInteres
+            return (this.CuotaCapital() + this.CuotaInteres());
+        }
     }
 }
