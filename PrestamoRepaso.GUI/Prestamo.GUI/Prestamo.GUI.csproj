@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +78,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Prestamo.Entidades\Prestamo.Entidades.csproj">
+      <Project>{2367983e-50b8-4506-9c94-9cd8db36538e}</Project>
+      <Name>Prestamo.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prestamo.Negocio\Prestamo.Negocio.csproj">
+      <Project>{5f3f9f9f-3a17-404c-a4a8-b1edd1f0e98c}</Project>
+      <Name>Prestamo.Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
