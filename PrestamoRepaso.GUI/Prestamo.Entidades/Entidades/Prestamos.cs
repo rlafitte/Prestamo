@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Prestamo.Entidades
 {
     [DataContract]
-    public class Prestamo
+    public class Prestamos
     {
         private int _id;
         private double _tna;
@@ -21,7 +21,7 @@ namespace Prestamo.Entidades
         private string _usuario;
         private TipoPrestamo _tipoPre;
 
-        public Prestamo(int id, double tna, string linea, int plazo, int idCliente, int idTipo, double monto, double cuota, string usuario, TipoPrestamo tipoPre)
+        public Prestamos(int id, double tna, string linea, int plazo, int idCliente, int idTipo, double monto, double cuota, string usuario, TipoPrestamo tipoPre)
         {
             Id = id;
             Tna = tna;
@@ -34,7 +34,7 @@ namespace Prestamo.Entidades
             Usuario = usuario;
             TipoPre = tipoPre;
         }
-        public Prestamo()
+        public Prestamos()
         {
 
         }
