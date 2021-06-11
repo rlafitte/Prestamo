@@ -33,7 +33,7 @@ namespace Prestamo.Entidades
 
         public override string ToString()
         {
-            return $"ID: {this.Id} - TNA%: {this.Tna}";
+            return $"ID: {this.Id} - TNA%: {this.Tna} - Linea: {this.Linea}";
         }
     }
 }
