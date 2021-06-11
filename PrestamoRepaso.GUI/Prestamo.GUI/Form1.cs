@@ -93,5 +93,33 @@ namespace Prestamo.GUI
                 MessageBox.Show("Error al seleccionar tipo de préstamo.");
             }
         }
+
+        private void btnSimular_Click(object sender, EventArgs e)
+        {
+            Prestamos pre = new Prestamos(Convert.ToDouble(tbTNA.Text), Convert.ToDouble(tbMonto.Text), Convert.ToInt32(tbPlazo.Text));
+            
+            tbCuotaCap.Text = pre.CuotaCapital().ToString("0.00");
+            tbCuotaInt.Text = pre.CuotaInteres().ToString("0.00");
+            tbCuotaTotal.Text = pre.CuotaTotal().ToString("0.00");
+        }
+
+        private void btnAlta_Click(object sender, EventArgs e)
+        {
+            TipoPrestamo tip = (TipoPrestamo)lstTipoPrestamo.SelectedItem;
+            int _tna = Convert.ToInt32(tip.Tna);
+            Prestamos pre = new Prestamos(Convert.ToDouble(tbCuotaTotal.Text),
+                Convert.ToDouble(tbMonto.Text),
+                Convert.ToInt32(tbPlazo.Text),
+                tip.Id,
+                Convert.ToInt32("877071"),
+                tip.Id,
+                _tna,
+                tip.Linea);
+
+
+            PopUpGUI p = new PopUpGUI(pre);
+  
+            p.Show();
+        }
     }
 }

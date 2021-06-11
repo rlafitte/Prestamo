@@ -21,5 +21,12 @@ namespace Prestamo.Negocio
             List<Prestamos> _lista = _preMap.ListaPrestamos();
             return _lista;
         }
+
+
+        public void AgregarPrestamo(Prestamos p)
+        {
+            _preMap.AgregarPrestamo(p);
+
+        }
     }
 }

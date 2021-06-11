@@ -89,6 +89,7 @@ namespace Prestamo.GUI
             this.btnSimular.TabIndex = 5;
             this.btnSimular.Text = "Simular";
             this.btnSimular.UseVisualStyleBackColor = true;
+            this.btnSimular.Click += new System.EventHandler(this.btnSimular_Click);
             // 
             // tbCuotaCap
             // 
@@ -122,6 +123,7 @@ namespace Prestamo.GUI
             this.btnAlta.TabIndex = 9;
             this.btnAlta.Text = "Alta";
             this.btnAlta.UseVisualStyleBackColor = true;
+            this.btnAlta.Click += new System.EventHandler(this.btnAlta_Click);
             // 
             // lstTipoPrestamo
             // 

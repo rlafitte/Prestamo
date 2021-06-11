@@ -39,6 +39,31 @@ namespace Prestamo.Entidades
         {
             TipoPre = new TipoPrestamo();
         }
+        public Prestamos(double tna, double monto, int plazo)
+        {
+            TipoPre = new TipoPrestamo();
+            
+            Tna = tna;
+            Monto = monto;
+            Plazo = plazo;
+        }
+        public Prestamos(double cuota, double monto, int plazo, int idtipo, int idcliente, int tipoPres, int tna, string linea)
+        {
+            TipoPre = new TipoPrestamo();
+            Cuota = cuota;
+            Monto = monto;
+            Plazo = plazo;
+            Id = idtipo;
+            IdTipo = idtipo;
+            IdCliente = idcliente;
+            TipoPre.Id = tipoPres;
+            TipoPre.Tna = tna;
+            Tna = tna;
+            Linea = linea;
+            Usuario = "877071";
+        }
+       
+        
 
         [DataMember (Name = "id")]
         public int Id { get => _id; set => _id = value; }

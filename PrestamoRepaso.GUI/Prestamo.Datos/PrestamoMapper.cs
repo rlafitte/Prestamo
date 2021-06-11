@@ -48,7 +48,8 @@ namespace Prestamo.Datos
             n.Add("idTipo", pre.IdTipo.ToString());
             n.Add("monto", pre.Monto.ToString());
             n.Add("cuota", pre.Cuota.ToString());
-            n.Add("tipoPrest", pre.TipoPre.ToString());
+            n.Add("usuario", pre.Usuario);
+            n.Add("tipoPrest", pre.TipoPre.Id.ToString());
             return n;
         }
 
