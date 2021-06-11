@@ -1,0 +1,13 @@
+C:\Users\renar\Desktop\CAI\Prestamo\PrestamoRepaso.GUI\Prestamo.Negocio\bin\Debug\Prestamo.Negocio.dll
+C:\Users\renar\Desktop\CAI\Prestamo\PrestamoRepaso.GUI\Prestamo.Negocio\bin\Debug\Prestamo.Negocio.pdb
+C:\Users\renar\Desktop\CAI\Prestamo\PrestamoRepaso.GUI\Prestamo.Negocio\bin\Debug\Prestamo.Datos.dll
+C:\Users\renar\Desktop\CAI\Prestamo\PrestamoRepaso.GUI\Prestamo.Negocio\bin\Debug\Prestamo.Entidades.dll
+C:\Users\renar\Desktop\CAI\Prestamo\PrestamoRepaso.GUI\Prestamo.Negocio\bin\Debug\Newtonsoft.Json.dll
+C:\Users\renar\Desktop\CAI\Prestamo\PrestamoRepaso.GUI\Prestamo.Negocio\bin\Debug\Prestamo.Datos.pdb
+C:\Users\renar\Desktop\CAI\Prestamo\PrestamoRepaso.GUI\Prestamo.Negocio\bin\Debug\Prestamo.Entidades.pdb
+C:\Users\renar\Desktop\CAI\Prestamo\PrestamoRepaso.GUI\Prestamo.Negocio\bin\Debug\Newtonsoft.Json.xml
+C:\Users\renar\Desktop\CAI\Prestamo\PrestamoRepaso.GUI\Prestamo.Negocio\obj\Debug\Prestamo.Negocio.csprojAssemblyReference.cache
+C:\Users\renar\Desktop\CAI\Prestamo\PrestamoRepaso.GUI\Prestamo.Negocio\obj\Debug\Prestamo.Negocio.csproj.CoreCompileInputs.cache
+C:\Users\renar\Desktop\CAI\Prestamo\PrestamoRepaso.GUI\Prestamo.Negocio\obj\Debug\Prestamo.Negocio.csproj.CopyComplete
+C:\Users\renar\Desktop\CAI\Prestamo\PrestamoRepaso.GUI\Prestamo.Negocio\obj\Debug\Prestamo.Negocio.dll
+C:\Users\renar\Desktop\CAI\Prestamo\PrestamoRepaso.GUI\Prestamo.Negocio\obj\Debug\Prestamo.Negocio.pdb

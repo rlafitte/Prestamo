@@ -24,8 +24,11 @@ namespace Prestamo.Entidades
         {
 
         }
+        [DataMember (Name = "tna")]
         public double Tna { get => _tna; set => _tna = value; }
+        [DataMember (Name = "linea")]
         public string Linea { get => _linea; set => _linea = value; }
+        [DataMember (Name = "id")]
         public int Id { get => _id; set => _id = value; }
 
         public override string ToString()
