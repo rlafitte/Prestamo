@@ -105,21 +105,42 @@ namespace Prestamo.GUI
 
         private void btnAlta_Click(object sender, EventArgs e)
         {
-            TipoPrestamo tip = (TipoPrestamo)lstTipoPrestamo.SelectedItem;
-            int _tna = Convert.ToInt32(tip.Tna);
-            Prestamos pre = new Prestamos(Convert.ToDouble(tbCuotaTotal.Text),
-                Convert.ToDouble(tbMonto.Text),
-                Convert.ToInt32(tbPlazo.Text),
-                tip.Id,
-                Convert.ToInt32("877071"),
-                tip.Id,
-                _tna,
-                tip.Linea);
+            try
+            {
+
+                TipoPrestamo tip = (TipoPrestamo)lstTipoPrestamo.SelectedItem;
+                int _tna = Convert.ToInt32(tip.Tna);
+                Prestamos pre = new Prestamos(Convert.ToDouble(tbCuotaTotal.Text),
+                    Convert.ToDouble(tbMonto.Text),
+                    Convert.ToInt32(tbPlazo.Text),
+                    tip.Id,
+                    Convert.ToInt32("877071"),
+                    tip.Id,
+                    _tna,
+                    tip.Linea);
 
 
-            PopUpGUI p = new PopUpGUI(pre);
-  
-            p.Show();
+                PopUpGUI p = new PopUpGUI(pre);
+
+                p.Show();
+            }
+            catch
+            {
+                MessageBox.Show("Error al dar de alta préstamo.");
+            }
+          
+            CargarPrestamos();
+            _op.PorcentajeComsion(_op.Prestamos1, _op.Comision);
+            LimpiarCampos();
+        }
+
+        private void LimpiarCampos()
+        {
+            tbMonto.Clear();
+            tbCuotaCap.Clear();
+            tbCuotaInt.Clear();
+            tbCuotaTotal.Clear();
+            tbPlazo.Clear();
         }
     }
 }
